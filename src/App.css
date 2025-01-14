@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playwrite+AU+SA:wght@100..400&display=swap');
+.container{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:#e2ddd9;
+}
+.texto-central h2{
+  font-size: 4vw;
+  color: red;
+  font-family: "Playwrite AU SA", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.botao2meses section{
+  position: absolute;
+  left: 100px;
+  top: 97vh;
+  color: transparent;
+  transition:0.5s;
+}
+.botao2meses section:hover{
+  color: black;
+}
+.imgCoracao1{
+  position: absolute;
+  left: 15%;
+  top: 20%;
+  display: flex;
+}
+.imgCoracao2{
+  position: absolute;
+  left: 45%;
+  top: 10%;
+}
+.imgCoracao3{
+  position: absolute;
+  left: 75%;
+  top: 20%;
+}
+.imgCoracao4{
+  position: absolute;
+  left: 15%;
+  top: 65%;
+}
+.imgCoracao5{
+  position: absolute;
+  left: 45%;
+  top: 75%;
+}
+.imgCoracao6{
+  position: absolute;
+  left: 75%;
+  top: 65%;
+}
+.imgCoracao1 img, .imgCoracao2 img, .imgCoracao3 img, .imgCoracao4 img, .imgCoracao5 img, .imgCoracao6 img{
+  width: 10vw;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.imgCoracao1 img:hover, .imgCoracao2 img:hover, .imgCoracao3 img:hover, .imgCoracao4 img:hover, .imgCoracao5 img:hover, .imgCoracao6 img:hover{
+  transform: scale(1.03);
+}
+
+
+/* Fundo da sobreposição */
+.overlay-background, .textOverlay-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro semitransparente */
+  z-index: 10;
+}
+.textImg{
+  width: 50%;
+  height: 95vh;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.textImg p{
+  text-align: justify;
+ 
+
+}
+
+/* Carrossel centralizado */
+.imagesHand {
+  background: white;
+  padding: 0px;
+  border-radius: 8px;
+  z-index: 20; /* Acima do fundo */
+  display: flex;
+  width: 70%;
+  position: absolute;
+}
+
+
+
+.imagesHand.overlay {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro semitransparente */
+}
